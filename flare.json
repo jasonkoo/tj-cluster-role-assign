@@ -1,0 +1,383 @@
+{
+ "name": "Tianjin-Cluster-Services",
+ "children": [
+ {
+   "name": "Cloudera Manager",
+   "children": [
+    {
+      "name": "Server", 
+      "children": [
+        {"name": "PUSH-009", "size": 10}
+      ]
+    },
+    {
+      "name": "Web UI", 
+      "children": [
+        {"name": "PUSH-009", "size": 10}
+      ]
+    },
+    {
+      "name": "PostgreSQL", 
+      "children": [
+        {"name": "PUSH-009", "size": 10}
+      ]
+    },
+    {
+      "name": "Management Services", 
+      "children": [
+        {"name": "PUSH-009", "size": 10}
+      ]
+    },          
+    {
+     "name": "Agent",
+     "children": [
+      {"name": "PUSH-001", "size": 1},
+      {"name": "PUSH-002", "size": 1},
+      {"name": "PUSH-003", "size": 1},
+      {"name": "PUSH-004", "size": 1},
+      {"name": "PUSH-005", "size": 1},
+      {"name": "PUSH-006", "size": 1},
+      {"name": "PUSH-007", "size": 1},
+      {"name": "PUSH-008", "size": 1},
+      {"name": "PUSH-009", "size": 1},
+      {"name": "PUSH-010", "size": 1},
+      {"name": "PUSH-011", "size": 1},
+      {"name": "PUSH-012", "size": 1},
+      {"name": "PUSH-013", "size": 1},
+      {"name": "PUSH-014", "size": 1},
+      {"name": "PUSH-015", "size": 1},
+      {"name": "PUSH-016", "size": 1},
+      {"name": "PUSH-017", "size": 1},
+      {"name": "PUSH-018", "size": 1},
+      {"name": "PUSH-019", "size": 1},
+      {"name": "PUSH-020", "size": 1}      
+     ]
+    }
+   ]
+  }, 
+  {
+   "name": "Hadoop",
+   "children": [
+    {
+     "name": "HDFS",
+     "children": [
+        {
+          "name": "HttpFS",
+          "children": [           
+            {"name": "PUSH-007", "size": 3}
+          ]      
+        },
+        {
+          "name": "NameNode",
+          "children": [
+            {"name": "PUSH-007", "size": 3},
+            {"name": "PUSH-008", "size": 3}
+          ]      
+        },
+        {
+          "name": "JournalNode",
+          "children": [
+            {"name": "PUSH-001", "size": 2},
+            {"name": "PUSH-007", "size": 2},
+            {"name": "PUSH-008", "size": 2}
+          ]      
+        },
+        {
+          "name": "Failover Controller",
+          "children": [            
+            {"name": "PUSH-007", "size": 3},
+            {"name": "PUSH-008", "size": 3}
+          ]      
+        },
+        {
+          "name": "DataNode",
+          "children": [
+            {"name": "PUSH-001", "size": 1},
+            {"name": "PUSH-002", "size": 1},
+            {"name": "PUSH-003", "size": 1},
+            {"name": "PUSH-004", "size": 1},
+            {"name": "PUSH-005", "size": 1},
+            {"name": "PUSH-006", "size": 1},
+            {"name": "PUSH-007", "size": 1},
+            {"name": "PUSH-008", "size": 1},
+            {"name": "PUSH-014", "size": 1},
+            {"name": "PUSH-015", "size": 1},
+            {"name": "PUSH-016", "size": 1},
+            {"name": "PUSH-017", "size": 1}   
+          ]    
+        },
+        {
+          "name": "Gateway",
+          "children": [
+            {"name": "PUSH-009", "size": 1},
+            {"name": "PUSH-011", "size": 1},
+            {"name": "PUSH-012", "size": 1},
+            {"name": "PUSH-013", "size": 1},
+            {"name": "PUSH-019", "size": 1},
+            {"name": "PUSH-020", "size": 1} 
+          ]    
+        }         
+      ]
+    },
+    {
+     "name": "MapReduce",
+     "children": [
+        {
+          "name": "JobTracker",
+          "children": [           
+            {"name": "PUSH-001", "size": 10}
+          ]      
+        },
+        {
+          "name": "TaskTracker",
+          "children": [
+            {"name": "PUSH-001", "size": 1},
+            {"name": "PUSH-002", "size": 1},
+            {"name": "PUSH-003", "size": 1},
+            {"name": "PUSH-004", "size": 1},
+            {"name": "PUSH-005", "size": 1},
+            {"name": "PUSH-006", "size": 1},
+            {"name": "PUSH-007", "size": 1},
+            {"name": "PUSH-008", "size": 1},
+            {"name": "PUSH-014", "size": 1},
+            {"name": "PUSH-015", "size": 1},
+            {"name": "PUSH-016", "size": 1},
+            {"name": "PUSH-017", "size": 1}   
+          ]    
+        },
+        {
+          "name": "Gateway",
+          "children": [           
+            {"name": "PUSH-009", "size": 10}
+          ]      
+        }
+     ]
+    }
+   ]
+  },  
+  {
+   "name": "ZooKeeper",
+   "children": [
+    {"name": "PUSH-010", "size": 1},
+    {"name": "PUSH-011", "size": 1},
+    {"name": "PUSH-012", "size": 1},
+    {"name": "PUSH-013", "size": 1},
+    {"name": "PUSH-018", "size": 1}
+   ]
+  },
+  {
+   "name": "Hive",
+   "children": [   
+    {"name": "PUSH-009", "size": 10}
+   ]
+  },
+  {
+   "name": "Sqoop",
+   "children": [   
+    {"name": "PUSH-009", "size": 10}
+   ]
+  },
+  {
+   "name": "Oozie",
+   "children": [   
+    {"name": "PUSH-009", "size": 10}
+   ]
+  },
+  {
+   "name": "Hue",
+   "children": [   
+    {"name": "PUSH-009", "size": 10}
+   ]
+  },
+  {
+  "name": "Mdrill",
+  "children": [
+    {
+      "name": "MdrillUi",
+      "children": [           
+        {"name": "PUSH-002", "size": 10}
+      ]      
+    },
+    {
+      "name": "NimbusServer",
+      "children": [           
+        {"name": "PUSH-003", "size": 10}
+      ]      
+    },   
+    {
+      "name": "Supervisor",
+      "children": [
+        {"name": "PUSH-001", "size": 1},
+        {"name": "PUSH-002", "size": 1},
+        {"name": "PUSH-003", "size": 1},
+        {"name": "PUSH-004", "size": 1},
+        {"name": "PUSH-005", "size": 1},
+        {"name": "PUSH-006", "size": 1},
+        {"name": "PUSH-007", "size": 1},
+        {"name": "PUSH-008", "size": 1},
+        {"name": "PUSH-014", "size": 1},
+        {"name": "PUSH-015", "size": 1},
+        {"name": "PUSH-016", "size": 1},
+        {"name": "PUSH-017", "size": 1}   
+      ]    
+    },
+    {
+      "name": "MapRed",
+      "children": [
+        {"name": "PUSH-001", "size": 1},
+        {"name": "PUSH-002", "size": 1},
+        {"name": "PUSH-003", "size": 1},
+        {"name": "PUSH-004", "size": 1},
+        {"name": "PUSH-005", "size": 1},
+        {"name": "PUSH-006", "size": 1},
+        {"name": "PUSH-007", "size": 1},
+        {"name": "PUSH-008", "size": 1},
+        {"name": "PUSH-014", "size": 1},
+        {"name": "PUSH-015", "size": 1},
+        {"name": "PUSH-016", "size": 1},
+        {"name": "PUSH-017", "size": 1}   
+      ]    
+    }
+  ]
+ },
+ {
+   "name": "Kafka-TJ",
+   "children": [
+    {
+      "name": "Server", 
+      "children": [
+        {"name": "PUSH-010", "size": 3},
+        {"name": "PUSH-018", "size": 3}
+      ]
+    },
+    {
+      "name": "Monitor", 
+      "children": [
+        {"name": "PUSH-017", "size": 10}
+      ]
+    }   
+   ]
+  },
+  {
+   "name": "Kafka-BJ",
+   "children": [
+    {
+      "name": "Server", 
+      "children": [
+        {"name": "PSB-LA-VM04", "size": 3},
+        {"name": "PSB-LA-VM05", "size": 3}
+      ]
+    },
+    {
+      "name": "Monitor", 
+      "children": [
+        {"name": "PUSH-016", "size": 10}
+      ]
+    }   
+   ]
+  },
+  {
+   "name": "Logstash",
+   "children": [
+    {
+      "name": "hit", 
+      "children": [
+        {"name": "PUSH-012", "size": 3},
+        {"name": "PUSH-013", "size": 3},
+        {"name": "PUSH-019", "size": 3},
+        {"name": "PUSH-020", "size": 3}
+      ]
+    },
+    {
+      "name": "avatar", 
+      "children": [
+        {"name": "PUSH-012", "size": 3},
+        {"name": "PUSH-013", "size": 3},
+        {"name": "PUSH-019", "size": 3},
+        {"name": "PUSH-020", "size": 3}
+      ]
+    },
+    {
+      "name": "feedback", 
+      "children": [
+        {"name": "PUSH-019", "size": 3},
+        {"name": "PUSH-020", "size": 3}
+      ]
+    },
+    {
+      "name": "aomp", 
+      "children": [
+        {"name": "PUSH-012", "size": 3},
+        {"name": "PUSH-013", "size": 3}
+      ]
+    }  
+   ]
+  },
+  {
+   "name": "MySQL",
+   "children": [
+    {
+      "name": "Master", 
+      "children": [
+        {"name": "PUSH-011", "size": 5}
+      ]
+    },
+    {
+      "name": "Slave", 
+      "children": [
+        {"name": "PUSH-012", "size": 5}
+      ]
+    }   
+   ]
+  },
+  {
+   "name": "Redis",
+   "children": [
+    {
+      "name": "For Chen", 
+      "children": [
+        {"name": "PUSH-010", "size": 1},
+        {"name": "PUSH-011", "size": 1},
+        {"name": "PUSH-012", "size": 1},
+        {"name": "PUSH-013", "size": 1},
+        {"name": "PUSH-018", "size": 1},
+        {"name": "PUSH-019", "size": 1},
+        {"name": "PUSH-020", "size": 1}
+      ]
+    },
+    {
+      "name": "AOMP Realtime", 
+      "children": [
+        {"name": "PUSH-005", "size": 5}
+      ]
+    }   
+   ]
+  },
+  {
+   "name": "lestat",
+   "children": [
+    {
+      "name": "Kafka", 
+      "children": [
+        {"name": "PUSH-019", "size": 5},
+        {"name": "PUSH-020", "size": 5}
+      ]
+    },
+    {
+      "name": "Engine", 
+      "children": [
+        {"name": "PUSH-010", "size": 5},
+        {"name": "PUSH-019", "size": 5},
+        {"name": "PUSH-020", "size": 5}
+      ]
+    }   
+   ]
+  },
+  {
+   "name": "Ping Test",
+   "children": [   
+    {"name": "PUSH-020", "size": 10}
+   ]
+  }  
+ ]
+}

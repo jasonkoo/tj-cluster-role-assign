@@ -1,0 +1,208 @@
+{
+ "name": "Tianjin-Cluster(10.0.4.1xx)",
+ "children": [ 
+  {
+   "name": "PUSH-001",
+   "children": [  
+    {"name": "JournalNode", "size": 10000},
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-002",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "MdrillUi", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },  
+  {
+   "name": "PUSH-003",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "NimbusServer", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },  
+  {
+   "name": "PUSH-004",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-005",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000},
+    {"name": "Redis2", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-006",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-007",
+   "children": [
+    {"name": "NameNode(Active)", "size": 10000},
+    {"name": "JournalNode", "size": 10000},
+    {"name": "Failover Controller", "size": 10000},
+    {"name": "HttpFS", "size": 10000},
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-008",
+   "children": [
+    {"name": "NameNode(Standby)", "size": 10000},
+    {"name": "JournalNode", "size": 10000},
+    {"name": "Failover Controller", "size": 10000},
+    {"name": "DataNode", "size": 10000},    
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-009",
+   "children": [
+    {"name": "postgreSQL", "size": 10000},
+    {"name": "cloudera-web-ui", "size": 10000},
+    {"name": "cloudera-mgmt-services", "size": 10000},
+    {"name": "HDFS Gateway", "size": 10000},
+    {"name": "YARN Gateway", "size": 10000},
+    {"name": "Hive", "size": 10000},    
+    {"name": "Sqoop", "size": 10000},
+    {"name": "Kafka Monitor(8092, PUSH-010,018)", "size": 10000},
+    {"name": "ping test(psb-la-vm04)", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-010",
+   "children": [
+    {"name": "ZooKeeper", "size": 10000},
+    {"name": "Kafka", "size": 10000},
+    {"name": "Redis", "size": 10000},
+    {"name": "Nginx(lestat-engine-19,20)", "size": 10000}     
+   ]
+  },
+  {
+   "name": "PUSH-011",
+   "children": [
+    {"name": "ZooKeeper", "size": 10000},
+    {"name": "HDFS Gateway", "size": 10000},
+    {"name": "MySQL-master(db_stream,db_lestat,db_aomp,db_push_stats,db_sus,db_push_org)", "size": 10000},
+    {"name": "Redis", "size": 10000},
+    {"name": "Tomcat(Stream, RoleAssignment)", "size": 10000},
+    {"name": "vsftpd", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-012",
+   "children": [
+    {"name": "ZooKeeper", "size": 10000},
+    {"name": "HDFS Gateway", "size": 10000},
+    {"name": "logstash(hit,avatar,aomp)", "size": 10000},  
+    {"name": "MySQL-slave(db_stream,db_lestat,db_aomp,db_push_stats,db_sus,db_push_org )", "size": 10000},
+    {"name": "Redis", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-013",
+   "children": [
+    {"name": "ZooKeeper", "size": 10000}, 
+    {"name": "HDFS Gateway", "size": 10000},   
+    {"name": "logstash(hit,avatar,aomp)", "size": 10000},
+    {"name": "Redis", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-014",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "ResourceManager", "size": 10000},
+    {"name": "JobHistory Server", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000},
+    {"name": "Oozie", "size": 10000},
+    {"name": "Hue", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-015",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-016",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}  
+   ]
+  },
+  {
+   "name": "PUSH-017",
+   "children": [
+    {"name": "DataNode", "size": 10000},
+    {"name": "NodeManager", "size": 10000},
+    {"name": "Supervisor", "size": 10000},
+    {"name": "MapRed", "size": 10000}    
+   ]
+  },
+  {
+   "name": "PUSH-018",
+   "children": [
+    {"name": "ZooKeeper", "size": 10000},
+    {"name": "Kafka", "size": 10000},
+    {"name": "Redis", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-019",
+   "children": [
+    {"name": "HDFS Gateway", "size": 10000},
+    {"name": "logstash(hit,avatar,feedback)", "size": 10000},
+    {"name": "Redis", "size": 10000},
+    {"name": "lestat-engine", "size": 10000}
+   ]
+  },
+  {
+   "name": "PUSH-020",
+   "children": [
+    {"name": "HDFS Gateway", "size": 10000},
+    {"name": "logstash(hit,avatar,feedback)", "size": 10000},
+    {"name": "Redis", "size": 10000},
+    {"name": "lestat-engine", "size": 10000},
+    {"name": "lestat-kafka (appfeedback)", "size": 10000} 
+   ]
+  }
+ ]
+}
